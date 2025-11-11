@@ -1,0 +1,155 @@
+/* Base styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0a0a0a; /* Slightly off-black */
+    color: #e5e7eb; /* Light gray text */
+    overflow-x: hidden; /* Prevent horizontal scroll from background elements */
+}
+
+/* NEW Accent color theme */
+:root {
+    --accent-color: #ec4899; /* Pink */
+    --secondary-accent: #8b5cf6; /* Purple */
+    --tertiary-accent: #06b6d4; /* Cyan */
+}
+
+/* Typewriter effect */
+.typewriter-text {
+    border-right: 0.15em solid var(--accent-color); /* Pink caret */
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2.5s steps(30, end) infinite,
+                 blink-caret .75s step-end infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* Caret blinking */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--accent-color); }
+}
+
+/* Scroll-in animation */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #111827;
+}
+::-webkit-scrollbar-thumb {
+    background: #374151;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-color); /* Pink scrollbar hover */
+}
+
+/* --- Background Shapes & Animations --- */
+.animated-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.shape {
+    position: absolute;
+    background: linear-gradient(45deg, var(--accent-color), var(--secondary-accent)); /* Pink to Purple gradient */
+    border-radius: 50%;
+    opacity: 0.1;
+    animation: float 15s infinite ease-in-out alternate;
+}
+
+/* Added more shapes and varied gradients */
+.shape:nth-child(1) {
+    background: linear-gradient(45deg, var(--accent-color), var(--secondary-accent));
+    width: 150px; height: 150px;
+    top: 10%; left: 5%;
+    animation-duration: 18s;
+    animation-delay: 0s;
+}
+.shape:nth-child(2) {
+    background: linear-gradient(45deg, var(--secondary-accent), var(--tertiary-accent)); /* Purple to Cyan */
+    width: 200px; height: 200px;
+    top: 50%; right: 10%;
+    animation-duration: 20s;
+    animation-delay: 2s;
+}
+.shape:nth-child(3) {
+    background: linear-gradient(45deg, var(--tertiary-accent), var(--accent-color)); /* Cyan to Pink */
+    width: 100px; height: 100px;
+    bottom: 5%; left: 30%;
+    animation-duration: 16s;
+    animation-delay: 4s;
+}
+.shape:nth-child(4) {
+    background: linear-gradient(45deg, var(--accent-color), var(--secondary-accent));
+    width: 250px; height: 250px;
+    top: 20%; right: 20%;
+    animation-duration: 22s;
+    animation-delay: 6s;
+}
+.shape:nth-child(5) {
+    background: linear-gradient(45deg, var(--secondary-accent), var(--tertiary-accent));
+    width: 120px; height: 120px;
+    bottom: 20%; left: 15%;
+    animation-duration: 19s;
+    animation-delay: 8s;
+}
+.shape:nth-child(6) {
+    background: linear-gradient(45deg, var(--tertiary-accent), var(--accent-color));
+    width: 180px; height: 180px;
+    top: 40%; left: 5%;
+    animation-duration: 17s;
+    animation-delay: 10s;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px) translateX(0px) rotate(0deg); }
+    50% { transform: translateY(-30px) translateX(20px) rotate(5deg); opacity: 0.15;}
+    100% { transform: translateY(0px) translateX(0px) rotate(0deg); }
+}
+
+/* --- Updated Glow Styles --- */
+
+/* Transitions for new hover effects */
+.card-transition {
+    transition: all 0.3s ease-out;
+}
+
+/* Project Card Glow */
+.card-hover-glow-project:hover {
+    box-shadow: 0 0 25px 5px rgba(236, 72, 153, 0.3); /* Pink glow */
+}
+
+/* Coursework Card Glow & Lift */
+.card-hover-glow-course:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px 0px rgba(236, 72, 153, 0.3); /* Pink glow */
+}
+
+/* About/Journey Box Glow */
+.box-hover-glow:hover {
+    box-shadow: 0 0 30px 0px rgba(236, 72, 153, 0.2); /* Subtle Pink glow */
+}
