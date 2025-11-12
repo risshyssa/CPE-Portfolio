@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lance Daniel - Portfolio</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="antialiased bg-black text-gray-200">
+
+  <!-- Animated Background -->
+  <div class="animated-background">
+    <div class="shape"></div><div class="shape"></div><div class="shape"></div>
+    <div class="shape"></div><div class="shape"></div><div class="shape"></div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 w-full backdrop-blur-md bg-black/40 border-b border-gray-800">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#home" class="text-2xl font-bold text-white">Lance Daniel</a>
+        <div class="hidden sm:flex space-x-4">
+          <a href="#home" class="hover:text-pink-400">Home</a>
+          <a href="#about" class="hover:text-pink-400">About</a>
+          <a href="#coursework" class="hover:text-pink-400">Coursework</a>
+          <a href="#journey" class="hover:text-pink-400">Journey</a>
+          <a href="#skills" class="hover:text-pink-400">Skills</a>
+          <a href="#contact" class="hover:text-pink-400">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+    <!-- HERO SECTION -->
+    <section id="home" class="min-h-screen flex flex-col-reverse lg:flex-row items-center justify-center gap-10 pt-16">
+      <div class="lg:w-1/2 text-center lg:text-left">
+        <h1 class="text-5xl font-extrabold text-white leading-tight">
+          Hi, I'm <span class="text-pink-500">Lance Daniel</span>
+        </h1>
+        <p class="text-xl text-gray-400 mt-3">1st Year Computer Engineering Student</p>
+        <p class="mt-6 text-lg text-gray-400 max-w-lg mx-auto lg:mx-0">
+          A dedicated computer engineering student eager to learn, build, and innovate.
+        </p>
+        <div class="mt-8 flex gap-4 justify-center lg:justify-start">
+          <a href="#contact" class="bg-pink-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-pink-600 transition transform hover:-translate-y-1">
+            Get in Touch
+          </a>
+          <a href="#coursework" class="border border-gray-700 text-gray-300 px-6 py-3 rounded-lg hover:bg-gray-800 hover:border-pink-400 transition transform hover:-translate-y-1">
+            View My Work
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:w-1/2 flex justify-center items-center">
+        <div class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-pink-500 shadow-2xl">
+          <img src="./portfolio.jpg" alt="Lance Daniel" class="object-cover w-full h-full" />
+        </div>
+      </div>
+    </section>
+
+    <!-- COURSEWORK -->
+    <section id="coursework" class="py-24 fade-in-section">
+  <h2 class="text-4xl font-bold text-center text-white mb-12">
+    Key <span class="text-pink-500">Coursework</span>
+  </h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Course Outcome 1 -->
+    <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 hover:border-pink-500 card-hover-glow-course overflow-hidden">
+      <div class="rounded-lg overflow-hidden mb-4 relative group">
+        <img src="preview1.jpg" alt="Course Outcome 1 Infographic"
+             class="object-cover w-full h-48 transition-transform duration-300 group-hover:scale-105">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <span class="text-pink-400 font-medium">View Infographic →</span>
+        </div>
+      </div>
+      <h3 class="text-2xl font-semibold text-white mb-3">Course Outcome 1</h3>
+      <p class="text-gray-400 mb-4">
+        The start of the CPE Course where we tackled the basics and the fundamentals of the Computer Engineering course. In this course outcome we made an Infographic related to the CPE Subject.
+      </p>
+      <a href="https://www.canva.com/design/DAGy-8QHNHE/mb9VSZkcpDVOqi_kaAnbvA/edit?utm_content=DAGy-8QHNHE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+         class="text-pink-400 hover:text-pink-300 font-medium transition">View Related Project →</a>
+    </div>
+
+    <!-- Course Outcome 2 -->
+    <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 hover:border-pink-500 card-hover-glow-course overflow-hidden">
+      <div class="rounded-lg overflow-hidden mb-4 relative group">
+        <img src="preview2.jpg" alt="Course Outcome 2 Project"
+             class="object-cover w-full h-48 transition-transform duration-300 group-hover:scale-105">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <span class="text-pink-400 font-medium">View Video →</span>
+        </div>
+      </div>
+      <h3 class="text-2xl font-semibold text-white mb-3">Course Outcome 2</h3>
+      <p class="text-gray-400 mb-4">
+        This is where we talcked Design Thinking, Engineering Ethics, Standards and Codes, and the emerging technologies that is related to Computer Engineering.
+      </p>
+      <a href="https://youtu.be/Z4ZG8S-ZYo4"
+         class="text-pink-400 hover:text-pink-300 font-medium transition">View Related Project →</a>
+    </div>
+
+    <!-- Course Outcome 3 -->
+    <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 hover:border-pink-500 card-hover-glow-course overflow-hidden">
+      <div class="rounded-lg overflow-hidden mb-4 relative group">
+        <img src="preview3.jpg" alt="Course Outcome 3 Website"
+             class="object-cover w-full h-48 transition-transform duration-300 group-hover:scale-105">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <span class="text-pink-400 font-medium">View Project →</span>
+        </div>
+      </div>
+      <h3 class="text-2xl font-semibold text-white mb-3">Course Outcome 3</h3>
+      <p class="text-gray-400 mb-4">
+        This is where we independently learnt about creating a simple website like this, from scratch, and we were asked to do a Project related to SDG's that is related to the Computer Engineering course.
+      </p>
+      <a href="https://drive.google.com/file/d/1wkxpTbAledCRjO3iwDIliwLhVPwtrccC/view?usp=sharing"
+         class="text-pink-400 hover:text-pink-300 font-medium transition">View Related Project →</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="activities" class="py-24 fade-in-section">
+  <h2 class="text-4xl font-bold text-center text-white mb-12">
+    My <span class="text-pink-500">CPE Activities</span>
+  </h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Activity 1: Infographic -->
+    <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 hover:border-pink-500 card-hover-glow-course overflow-hidden">
+      <div class="rounded-lg overflow-hidden mb-4 relative group">
+        <img src="infographic.jpg" alt="Infographic Activity"
+             class="object-cover w-full h-48 transition-transform duration-300 group-hover:scale-105">
+      </div>
+      <h3 class="text-2xl font-semibold text-white mb-2">Infographic</h3>
+      <p class="text-gray-400 mb-4">
+        A visual summary about Computer Engineering fundamentals, showing the key concepts and components of the CPE course.
+      </p>
+      <a href="https://www.canva.com/design/DAGy-8QHNHE/mb9VSZkcpDVOqi_kaAnbvA/edit?utm_content=DAGy-8QHNHE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+         target="_blank"
+         class="inline-block bg-pink-500 text-white font-medium px-4 py-2 rounded-lg hover:bg-pink-600 transition">
+        View Project →
+      </a>
+    </div>
+
+    <!-- Activity 2: Reverse Engineering Report -->
+    <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 hover:border-pink-500 card-hover-glow-course overflow-hidden">
+      <div class="rounded-lg overflow-hidden mb-4 relative group">
+        <img src="reverse-engineering.jpg" alt="Reverse Engineering Report"
+             class="object-cover w-full h-48 transition-transform duration-300 group-hover:scale-105">
+      </div>
+      <h3 class="text-2xl font-semibold text-white mb-2">Reverse Engineering Report</h3>
+      <p class="text-gray-400 mb-4">
+        A written report analyzing and explaining the internal components and logic of a specific technology.
+      </p>
+      <a href="#" class="inline-block bg-pink-500 text-white font-medium px-4 py-2 rounded-lg hover:bg-pink-600 transition">
+        View Project →
+      </a>
+    </div>
+
+    <!-- Activity 3: YouTube Video -->
+    <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 hover:border-pink-500 card-hover-glow-course overflow-hidden">
+      <div class="rounded-lg overflow-hidden mb-4 relative group">
+        <img src="youtube-thumb.jpg" alt="Technology Video"
+             class="object-cover w-full h-48 transition-transform duration-300 group-hover:scale-105">
+      </div>
+      <h3 class="text-2xl font-semibold text-white mb-2">Technology Video</h3>
+      <p class="text-gray-400 mb-4">
+        A short YouTube video explaining an emerging technology and its impact in the field of Computer Engineering.
+      </p>
+      <a href="https://youtu.be/Z4ZG8S-ZYo4"
+         target="_blank"
+         class="inline-block bg-pink-500 text-white font-medium px-4 py-2 rounded-lg hover:bg-pink-600 transition">
+        Watch Video →
+      </a>
+    </div>
+
+    <!-- Activity 4: SDG Group Activity -->
+    <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 hover:border-pink-500 card-hover-glow-course overflow-hidden">
+      <div class="rounded-lg overflow-hidden mb-4 relative group">
+        <img src="sdg-project.jpg" alt="SDG Project"
+             class="object-cover w-full h-48 transition-transform duration-300 group-hover:scale-105">
+      </div>
+      <h3 class="text-2xl font-semibold text-white mb-2">SDG Group Project</h3>
+      <p class="text-gray-400 mb-4">
+        A collaborative project addressing one of the United Nations Sustainable Development Goals through Computer Engineering innovation.
+      </p>
+      <a href="https://drive.google.com/file/d/1wkxpTbAledCRjO3iwDIliwLhVPwtrccC/view?usp=sharing"
+         target="_blank"
+         class="inline-block bg-pink-500 text-white font-medium px-4 py-2 rounded-lg hover:bg-pink-600 transition">
+        View Project →
+      </a>
+    </div>
+
+    <!-- Activity 5: Portfolio Website -->
+    <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 hover:border-pink-500 card-hover-glow-course overflow-hidden">
+      <div class="rounded-lg overflow-hidden mb-4 relative group">
+        <img src="website-preview.jpg" alt="Portfolio Website"
+             class="object-cover w-full h-48 transition-transform duration-300 group-hover:scale-105">
+      </div>
+      <h3 class="text-2xl font-semibold text-white mb-2">Portfolio Website</h3>
+      <p class="text-gray-400 mb-4">
+        This responsive personal website — designed and built using Tailwind CSS — showcasing my CPE journey and projects.
+      </p>
+      <a href="#home"
+         class="inline-block bg-pink-500 text-white font-medium px-4 py-2 rounded-lg hover:bg-pink-600 transition">
+        Explore Site →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- PERSONAL JOURNEY -->
+    <section id="journey" class="py-24 fade-in-section">
+      <h2 class="text-4xl font-bold text-center text-white mb-12">
+        My Personal <span class="text-pink-500">Journey</span> in Mapua University
+      </h2>
+      <div class="max-w-4xl mx-auto bg-gray-900 rounded-xl shadow-2xl p-10 border border-gray-800 box-hover-glow">
+        <p class="text-lg text-gray-300 mb-6">
+          I have been studying in Mapua for 2 years, since I was Grade 11. I have learnt a lot from this school, and I'm sure that just studying here alone has made me stronger than how I did before I studied here, and everyday in this school is a new challenge, with the activities, schoolworks, exams, etc.
+        </p>
+        <p class="text-lg text-gray-300 mb-6">
+          I've experienced a lot of shortcomings while studying here, missed deadlines, because of how fast paced it is, hard exams, in which I had to adjust and make sure that I don't get lazy anymore, and to not procrastinate — honestly that's everything.
+        </p>
+        <p class="text-lg text-gray-300">
+          But despite all of that, we push through and we learn more, and because of those experiences, I'm now where I am, in this new chapter of my school life. Yes, it's harder, but it's going to be fun and an eye-opening experience for me and everyone.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 mt-20 border-t border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <p class="text-center text-gray-500 text-sm">
+        © 2025 Lance Daniel. All rights reserved. Built with <span class="text-red-500">♥</span> and Tailwind CSS.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
